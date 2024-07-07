@@ -32,8 +32,8 @@ function Navbar() {
         </div>
       </div>
       <ul className="hidden lg:visible md:flex items-center gap-[40px] ">
-        <li className="text-[16px] text-[#6C87AE] first-of-type:text-[#3A8EF6] hover:text-[#3A8EF6] cursor-pointer">Formations</li>
-        <li className="text-[16px] text-[#6C87AE] first-of-type:text-[#3A8EF6] hover:text-[#3A8EF6] cursor-pointer">Pour les employeurs</li>
+        <li className="text-[16px] text-[#6C87AE] first-of-type:text-[#3A8EF6] hover:text-[#3A8EF6] cursor-pointer">Trainings</li>
+        <li className="text-[16px] text-[#6C87AE] first-of-type:text-[#3A8EF6] hover:text-[#3A8EF6] cursor-pointer">For employers</li>
         <li className="text-[16px] text-[#6C87AE] first-of-type:text-[#3A8EF6] hover:text-[#3A8EF6] cursor-pointer">Certifications</li>
         <li className="text-[16px] text-[#6C87AE] first-of-type:text-[#3A8EF6] hover:text-[#3A8EF6] cursor-pointer">Challenges</li>
         <li className="text-[16px] text-[#6C87AE] first-of-type:text-[#3A8EF6] hover:text-[#3A8EF6] cursor-pointer"></li>
