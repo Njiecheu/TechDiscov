@@ -1,0 +1,62 @@
+:root{
+    --color-49BEFF: #49BEFF;
+    --color-E8F7FF: #E8F7FF;
+    --color-34A1DE: #34A1DE;
+}
+
+/* .secContainer{
+    justify-content: center;
+    align-items: center;   
+} */
+.hello-div{
+    margin-top: 5rem;
+    display: grid;
+    padding: 2rem;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+}
+.hello-text{
+    /* background-color: blue; */
+    font-size: 40px;
+    font-weight: bold;
+}
+.hello-image{
+    /* background-color: red; */
+    margin-top: -3rem;
+}
+.card{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* justify-content: center;
+    align-items: center; */
+    margin-left: 5.5rem;
+    padding: 2rem;
+}
+.student-div, .employers-div{
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 20vw;
+    height: 22vh;
+}
+.student{
+    padding-left: 1rem;
+    padding-top: 5px;
+    font-weight: bold;
+}
+.student-text{
+    padding-left: 1rem;
+    padding-bottom: 5px;
+}
+.student-btn{
+    border: 1px solid var(--color-34A1DE);
+    border-radius: 5px;
+    width: 11vw;
+    margin-left: 3.7rem;
+}
+.learn-div{
+    background-color: yellow;
+}
+.learn-title{
+    margin-left: 19rem;
+    font-size: 3rem;
+}
