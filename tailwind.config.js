@@ -9,7 +9,7 @@ export default {
         primary: "#2A7FFF",
       },
       fontFamily: {
-        urbanist: ['Urbanist', 'sans-serif'],
+       Poppins: ['Poppins', 'sans-serif'],
         comfortaa: ['Comfortaa', 'sans-serif'],
       },
     },
