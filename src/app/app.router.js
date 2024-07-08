@@ -1,12 +1,12 @@
 import { RouterComponent, defineRouter } from "rasengan";
 import Home from "@app/home.page";
 import AppLayout from "@app/app.layout";
-import challengeRouter from "./challenge/challenge.router";
+import Challenge from "./challenge.page";
 
 class AppRouter extends RouterComponent {}
 
 export default defineRouter({
-  imports: [challengeRouter],
+  imports: [],
   layout: AppLayout,
-  pages: [Home],
+  pages: [Home, Challenge],
 })(AppRouter);

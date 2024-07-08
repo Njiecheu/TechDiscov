@@ -11,23 +11,26 @@ import Footer from "../footer/Footer";
 import img1 from '../../assets/i1.webp'
 import img2 from '../../assets/i2.jpeg'
 import img3 from '../../assets/i3.webp'
+import img4 from '../../assets/R2.jpeg'
+import img5 from '../../assets/i3.jpeg'
+import img6 from '../../assets/i4.jpeg'
 
 const data = [
   {
     id: 1,
-    postImage: 'img1',
+    postImage: img2,
     title: "Formation en ligne",
     desc: "Découvrez une large gamme de cours en ligne pour développer vos compétences dans divers domaines, accessibles à tout moment et depuis n'importe où.",
   },
   {
     id: 2,
-    postImage: 'img2',
+    postImage: img4,
     title: "Recrutement en ligne",
     desc: "Utilisez notre plateforme pour trouver des opportunités d'emploi correspondant à vos compétences et intérêts. Postulez directement en ligne et suivez l'avancement de vos candidatures.",
   },
   {
     id: 3,
-    postImage: 'img3',
+    postImage: img5,
     title: "Cours spécialisés",
     desc: "Accédez à des cours spécialisés créés par des experts dans leur domaine pour approfondir vos connaissances et obtenir des certifications reconnues.",
   },
@@ -42,7 +45,7 @@ const students = [
   {
     name: "Jane Smith",
     testimonial: "Sed posuere consectetur est at lobortis. Aenean lacinia bibendum nulla sed consectetur.",
-    image: img2
+    image: img6
   },
   {
     name: "Michael Johnson",
@@ -105,9 +108,9 @@ const Landing = () => {
       <div className="carousel">
         <Carousel students={students}/>
       </div>
-      <div className="footer">
+      {/* <div className="footer">
         <Footer />
-      </div>
+      </div> */}
     </React.Fragment>
   );
 };

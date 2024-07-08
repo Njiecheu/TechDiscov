@@ -3,13 +3,12 @@ import { Outlet } from "rasengan";
 import Navbar from "@/components/navbar/navbar";
 import Footer from "@/components/footer/Footer";
 
-
 const AppLayout = () => {
   return (
     <React.Fragment>
-      <Navbar/>
+      <Navbar />
       <Outlet />
-      <Footer/>
+      <Footer />
     </React.Fragment>
   );
 };
