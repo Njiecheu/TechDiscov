@@ -5,6 +5,7 @@ import Navbar from "@/components/navbar/navbar";
 import { useEffect } from "react";
 import Login from "./login.page";
 import { useNavigate } from "rasengan";
+import Footer from "@/components/footer/Footer";
 
 const AppLayout = () => {
   const connectedUserId = true;
@@ -23,7 +24,9 @@ const AppLayout = () => {
     <React.Fragment>
       {connectedUserId && <Navbar />}
 
+      <Navbar />
       <Outlet />
+      <Footer />
     </React.Fragment>
   );
 };

@@ -8,6 +8,8 @@ import Login from "./login.page";
 import Certifications from "./certifications";
 import CertifPayment from "./certifPayment.page";
 import CertificationTest from "./certification-test.page";
+import Challenge from "./challenge.page";
+
 class AppRouter extends RouterComponent {}
 
 export default defineRouter({
@@ -23,4 +25,5 @@ export default defineRouter({
     CertifPayment,
     CertificationTest,
   ],
+  pages: [Home, Challenge],
 })(AppRouter);

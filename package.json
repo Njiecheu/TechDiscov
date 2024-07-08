@@ -10,12 +10,22 @@
     "start": "rasengan start"
   },
   "dependencies": {
+<<<<<<< HEAD
     "@rasenganjs/image": "^1.1.2",
     "axios": "^1.7.2",
+=======
+    "@rasenganjs/image": "^1.0.0",
+    "aos": "^2.3.4",
+>>>>>>> origin/raph
     "classnames": "^2.5.1",
     "rasengan": "1.0.0-beta.13",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-datepicker": "^7.3.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^5.2.1",
+    "react-modal": "^3.16.1",
+    "react-slick": "^0.30.2",
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.16",

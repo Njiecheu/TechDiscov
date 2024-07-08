@@ -54,7 +54,7 @@ function Navbar() {
           Certifications
         </Link>
         <Link
-          to="/challenges"
+          to="/challenge"
           className="text-[16px] text-[#6C87AE] first-of-type:text-[#3A8EF6] hover:text-[#3A8EF6] cursor-pointer"
         >
           Challenges
