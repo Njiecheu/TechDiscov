@@ -1,5 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./landing.css";
+
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 import welcome from "../../assets/welcome.svg";
 import Carousel from "../carousel/Carousel";
@@ -48,24 +51,27 @@ const students = [
   }
 ];
 const Landing = () => {
+  useEffect(()=>{
+    Aos.init({duration: 2000})
+  },[])
   return (
     <React.Fragment>
       <div className="secContainer">
         <div className="hello-div">
-          <div className="hello-text">Discover and Elevate Tech Talents</div>
+          <div className="hello-text" data-aos='fade-up' data-aos-duration='2000'>Discover and Elevate Tech Talents</div>
           <div className="hello-image">
             <img src={welcome} alt="welcome image" />
           </div>
         </div>
         <div className="card">
-          <div className="student-div">
+          <div className="student-div" data-aos='fade-left' data-aos-duration='2000'>
             <p className="student">Student</p>
             <p className="student-text">
               Lorem ipsum dolor sit amet consecte
             </p>
             <button className="student-btn">Pass a certification</button>
           </div>
-          <div className="employers-div">
+          <div className="employers-div" data-aos='fade-right' data-aos-duration='2500'>
             <p className="student">Employers</p>
             <p className="student-text">
               Lorem ipsum dolor sit amet consecte
@@ -74,7 +80,7 @@ const Landing = () => {
           </div>
         </div>
         <div className="learn-div">
-          <div className="learn-title">What you'll learn</div>
+          <div className="learn-title" data-aos='fade-up' data-aos-duration='2000'>What you'll learn</div>
         </div>
         <div className="mainContainer grid">
           {data.map(({ id, postImage, title, desc }, index) => {
@@ -84,10 +90,10 @@ const Landing = () => {
                 key={id}
                 className={`singlePost grid ${isOdd ? "odd" : "even"}`}
               >
-                <div className="imgDiv">
+                <div className="imgDiv" data-aos='fade-right' data-aos-duration='2000'>
                   <img src={postImage} alt={title} />
                 </div>
-                <div className="postDetails">
+                <div className="postDetails" data-aos='fade-left' data-aos-duration='2500'>
                   <h3>{title}</h3>
                   <p>{desc}</p>
                 </div>

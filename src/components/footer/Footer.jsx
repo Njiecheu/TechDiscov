@@ -1,11 +1,18 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+
+import Aos from 'aos'
+import 'aos/dist/aos.css'
+
 import './footer.css';
 
 const Footer = () => {
+    useEffect(()=>{
+        Aos.init({duration: 2000})
+      },[])
   return (
     <footer className="footer-container">
       <div className="footer-content">
-        <div className="footer-section">
+        <div className="footer-section" data-aos='fade-up' data-aos-duration='2500'>
           <h4 className="footer-title">FOR STUDENTS</h4>
           <a href="#!" className="footer-link">Degree Programs</a>
           <a href="#!" className="footer-link">Courses</a>
@@ -13,14 +20,14 @@ const Footer = () => {
           <a href="#!" className="footer-link">Forum</a>
           <a href="#!" className="footer-link">Student Blog</a>
         </div>
-        <div className="footer-section">
+        <div className="footer-section" data-aos='fade-up' data-aos-duration='3000'>
           <h4 className="footer-title">FOR EMPLOYERS</h4>
           <a href="#!" className="footer-link">Training & Recruitment Solutions</a>
           <a href="#!" className="footer-link">Knowledge Development</a>
           <a href="#!" className="footer-link">Skills Enhancement</a>
           <a href="#!" className="footer-link">Employer Blog</a>
         </div>
-        <div className="footer-section">
+        <div className="footer-section" data-aos='fade-up' data-aos-duration='3500'>
           <h4 className="footer-title">TECHDISCOV</h4>
           <a href="#!" className="footer-link">About Us</a>
           <a href="#!" className="footer-link">Join Us</a>
@@ -28,13 +35,13 @@ const Footer = () => {
           <a href="#!" className="footer-link">Career Coach</a>
           <a href="#!" className="footer-link">Shop</a>
         </div>
-        <div className="footer-section">
+        <div className="footer-section" data-aos='fade-up' data-aos-duration='4000'>
           <h4 className="footer-title">HELP</h4>
           <a href="#!" className="footer-link">FAQ for Students</a>
           <a href="#!" className="footer-link">FAQ for Employers</a>
         </div>
       </div>
-      <div className="footer-bottom">
+      <div className="footer-bottom" data-aos='fade-up' data-aos-duration='4500'>
         &copy; 2024 TechDiscov. All rights reserved.
       </div>
     </footer>
