@@ -1,3 +1,9 @@
+:root{
+    --color-49BEFF: #49BEFF;
+    --color-E8F7FF: #E8F7FF;
+    --color-34A1DE: #34A1DE;
+  }
+
 .footer-container {
     background-color: hsl(0, 0%, 96%);;
     color: black;
@@ -20,11 +26,14 @@
 .footer-link {
     color: black;
     text-decoration: none;
+    font-weight: normal;
     margin: 5px 0;
 }
 
 .footer-link:hover {
-    text-decoration: underline;
+    font-weight: normal;
+    transform: translateX(.2rem);
+    color: var(--color-34A1DE);
 }
 
 .footer-content {

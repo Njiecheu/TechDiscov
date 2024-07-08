@@ -35,13 +35,13 @@ const Footer = () => {
           <a href="#!" className="footer-link">Career Coach</a>
           <a href="#!" className="footer-link">Shop</a>
         </div>
-        <div className="footer-section" data-aos='fade-up' data-aos-duration='4000'>
+        <div className="footer-section">
           <h4 className="footer-title">HELP</h4>
           <a href="#!" className="footer-link">FAQ for Students</a>
           <a href="#!" className="footer-link">FAQ for Employers</a>
         </div>
       </div>
-      <div className="footer-bottom" data-aos='fade-up' data-aos-duration='4500'>
+      <div className="footer-bottom">
         &copy; 2024 TechDiscov. All rights reserved.
       </div>
     </footer>

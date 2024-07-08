@@ -32,30 +32,30 @@ html {
   width: 5px;
   height: 0px;
 }
-  ::-webkit-scrollbar-thumb{
-    background-color: var(--color-34A1DE);
-    border-radius: 6px;
-  }
-  ::-moz-scrollbar{
-    width: 12px;
-  }
-  ::-moz-scrollbar-thumb{
-    background-color: var(--color-34A1DE);
-    border-radius: 6px;
-  }
+::-webkit-scrollbar-thumb{
+  background-color: var(--color-34A1DE);
+  border-radius: 6px;
+}
+::-moz-scrollbar{
+  width: 12px;
+}
+::-moz-scrollbar-thumb{
+  background-color: var(--color-34A1DE);
+  border-radius: 6px;
+}
   /* body {
     font-family: "Inter";
   } */
   body{
-    scrollbar-width: thin;
-    scrollbar-color: var(--color-34A1DE) transparent;
+    /* scrollbar-width: thin; */
+    /* scrollbar-color: var(--color-34A1DE) transparent; */
     overflow-y: scroll;
   }
-  body::-webkit-scrollbar{
+  /* body::-webkit-scrollbar{
     width: 5px;
-  }
+  } */
   body::-webkit-scrollbar-thumb{
-    background-color: var(--color-34A1DE);
+    /* background-color: var(--color-34A1DE); */
     border-radius: 6px;
   }
   /* scrollbar ends */
