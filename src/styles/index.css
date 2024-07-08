@@ -43,9 +43,9 @@ html {
     background-color: var(--color-34A1DE);
     border-radius: 6px;
   }
-  body {
+  /* body {
     font-family: "Inter";
-  }
+  } */
   body{
     scrollbar-width: thin;
     scrollbar-color: var(--color-34A1DE) transparent;
