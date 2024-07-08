@@ -1,5 +1,6 @@
 import { useState } from "react";
 import classNames from "classnames";
+import { Link } from "rasengan";
 
 function Navbar() {
   const [showMobileNav, setShowMobilenav] = useState(false);
@@ -20,9 +21,11 @@ function Navbar() {
   };
 
   return (
-    <nav className="relative flex items-center justify-around font-Poppins px-auto md:py-[25px] bg-[#F2F7FF] overflow-hidden ">
+    <nav className="relative flex items-center justify-around font-Poppins px-2 md:py-[25px] bg-[#F2F7FF] overflow-hidden ">
       <div className="relative font-sora text-[32px] pr-[40px] pt-[9px] doctor-gradient text-transparent font-[600] leading-normal text-primary">
-       TechDiscov
+        <span className="text-primary md:text-[32px] text-[25px] ">
+          TechDiscov
+        </span>
         <div className="absolute  right-0 top-0">
           {/* <img
             src={group3}
@@ -32,11 +35,30 @@ function Navbar() {
         </div>
       </div>
       <ul className="hidden lg:visible md:flex items-center gap-[40px] ">
-        <li className="text-[16px] text-[#6C87AE] first-of-type:text-[#3A8EF6] hover:text-[#3A8EF6] cursor-pointer">Trainings</li>
-        <li className="text-[16px] text-[#6C87AE] first-of-type:text-[#3A8EF6] hover:text-[#3A8EF6] cursor-pointer">For employers</li>
-        <li className="text-[16px] text-[#6C87AE] first-of-type:text-[#3A8EF6] hover:text-[#3A8EF6] cursor-pointer">Certifications</li>
-        <li className="text-[16px] text-[#6C87AE] first-of-type:text-[#3A8EF6] hover:text-[#3A8EF6] cursor-pointer">Challenges</li>
-        <li className="text-[16px] text-[#6C87AE] first-of-type:text-[#3A8EF6] hover:text-[#3A8EF6] cursor-pointer"></li>
+        <Link
+          to="/trainings"
+          className="text-[16px] text-[#6C87AE] first-of-type:text-[#3A8EF6] hover:text-[#3A8EF6] cursor-pointer"
+        >
+          Trainings
+        </Link>
+        <Link
+          to="/employers"
+          className="text-[16px] text-[#6C87AE] first-of-type:text-[#3A8EF6] hover:text-[#3A8EF6] cursor-pointer"
+        >
+          For employers
+        </Link>
+        <Link
+          to="/certifications"
+          className="text-[16px] text-[#6C87AE] first-of-type:text-[#3A8EF6] hover:text-[#3A8EF6] cursor-pointer"
+        >
+          Certifications
+        </Link>
+        <Link
+          to="/challenges"
+          className="text-[16px] text-[#6C87AE] first-of-type:text-[#3A8EF6] hover:text-[#3A8EF6] cursor-pointer"
+        >
+          Challenges
+        </Link>
         {/* {NAV_LINKS.map((item, index) => (
           <li
             key={index}

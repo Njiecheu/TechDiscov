@@ -5,7 +5,8 @@ export default defineConfig({
   server: {
     production: {
       hosting: "vercel",
-    }},
+    },
+  },
   // Define aliases
   vite: {
     resolve: {

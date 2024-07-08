@@ -10,7 +10,8 @@
     "start": "rasengan start"
   },
   "dependencies": {
-    "@rasenganjs/image": "^1.0.0",
+    "@rasenganjs/image": "^1.1.2",
+    "axios": "^1.7.2",
     "classnames": "^2.5.1",
     "rasengan": "1.0.0-beta.13",
     "react": "^18.2.0",
@@ -20,6 +21,7 @@
     "autoprefixer": "^10.4.16",
     "cross-env": "^7.0.3",
     "postcss": "^8.4.31",
+    "prettier": "3.3.2",
     "tailwindcss": "^3.3.5",
     "vite": "^5.2.0"
   }
