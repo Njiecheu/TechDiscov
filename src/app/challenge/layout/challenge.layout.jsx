@@ -4,7 +4,7 @@ import Navbar from "@/components/navbar/navbar";
 import Footer from "@/components/footer/Footer";
 
 
-const AppLayout = () => {
+const ChallengeLayout = () => {
   return (
     <React.Fragment>
       <Navbar/>
@@ -14,6 +14,6 @@ const AppLayout = () => {
   );
 };
 
-AppLayout.path = "/";
+ChallengeLayout.path = "/";
 
-export default AppLayout;
+export default ChallengeLayout;

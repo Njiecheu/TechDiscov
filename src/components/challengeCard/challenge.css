@@ -1,0 +1,203 @@
+:root{
+    --color-49BEFF: #49BEFF;
+    --color-E8F7FF: #E8F7FF;
+    --color-34A1DE: #34A1DE;
+}
+
+.challenge-div{
+    margin-top: 1rem;
+    display: grid;
+    padding: 1rem;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+.challenge-text{
+    /* background-color: blue; */
+    font-size: 40px;
+    font-weight: bold;
+}
+.challenge-image{
+    /* background-color: red; */
+    margin-top: -3rem;
+}
+.challenge-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-34A1DE);
+    color: #ffffff;
+    font-weight: bold;
+    height: 2rem;
+    width: 20vw;
+    border-radius: 5px;
+    margin: 1rem;
+    padding: 0;
+}
+.list-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.list-title{
+    font-size: 3rem;
+}
+.cardContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+}
+.task {
+    position: relative;
+    color: #2e2e2f;
+    cursor: move;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: rgba(99, 99, 99, 0.1) 0px 2px 8px 0px;
+    margin-bottom: 1rem;
+    border: 3px dashed transparent;
+    width: 100%;
+}
+.task:hover {
+    box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px;
+    border-color: rgba(162, 179, 207, 0.2) !important;
+}
+.task p {
+    font-size: 15px;
+    margin: 1.2rem 0;
+}
+.tag {
+    border-radius: 100px;
+    padding: 4px 13px;
+    font-size: 15px;
+    color: #ffffff;
+    box-shadow: rgba(153, 149, 149, 0.3) 0px 2px 8px 0px;
+}
+.tag.close{
+    background-color: rgb(243, 99, 99);
+}
+.tag.open{
+    background-color: #0ba65a;
+}
+.tags {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.options {
+    background: transparent;
+    border: 0;
+    color: #c4cad3;
+    font-size: 17px;
+}
+.options svg {
+    fill: #9fa4aa;
+    width: 20px;
+}
+.task .card-title{
+    font-weight: bold;
+    font-size: 2rem;
+}
+.stats {
+    position: relative;
+    width: 100%;
+    color: #9fa4aa;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.stats div {
+    margin-right: 1rem;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.stats svg {
+    margin-right: 5px;
+    height: 100%;
+    stroke: #9fa4aa;
+}
+.viewer span {
+    height: 30px;
+    width: 30px;
+    background-color: rgb(28, 117, 219);
+    margin-right: -10px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    padding: 2px;
+}
+.viewer span svg {
+    stroke: #fff;
+}
+
+/*response*/
+@media screen and (max-width: 450px) {
+    .cardContainer {
+        display: grid;
+        padding: 2rem;
+        grid-template-columns: 1fr;
+    }
+    .challenge-div{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .challenge-image{
+      display: none;
+    }
+    .challenge-text{
+      width: 100vw;
+      font-size: 25px;
+      text-align: center;
+    }
+    .challenge-btn {
+      display: flex;
+      margin-left: 5.7rem;
+      background-color: var(--color-34A1DE);
+      color: #ffffff;
+      font-weight: bold;
+      height: 2rem;
+      width: 55vw;
+      border-radius: 5px;
+      padding: 0 1rem;
+    }
+    .list-title{
+        text-align: center;
+    }
+}
+@media screen and (min-width: 451px) and (max-width: 889px) {
+    .cardContainer {
+        display: grid;
+        padding: 2rem;
+        grid-template-columns: 1fr 1fr;
+    }
+    .challenge-text{
+        padding-left: 1rem;
+        padding-bottom: 5px;
+    }
+    .challenge-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--color-34A1DE);
+        color: #ffffff;
+        font-weight: bold;
+        height: 2rem;
+        width: 40vw;
+        border-radius: 5px;
+        margin: 1rem;
+        padding: 0 1rem; /* Ajoute un espace horizontal entre le texte et les bordures */
+    }
+  }
