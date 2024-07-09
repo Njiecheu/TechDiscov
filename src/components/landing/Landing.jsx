@@ -65,6 +65,7 @@ const Landing = () => {
           <div className="hello-image">
             <img src={welcome} alt="welcome image" className="img-hello"/>
           </div>
+          <button className="landing-btn">Browse talents</button>
         </div>
         <div className="card">
           <div className="student-div" data-aos='fade-left' data-aos-duration='2000'>
