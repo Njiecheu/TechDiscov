@@ -8,9 +8,10 @@
     margin-top: 1rem;
     display: grid;
     padding: 1rem;
-    width: 100%;
+    width: 100vw;
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
+    background: linear-gradient(359.3deg, rgb(196, 214, 252) 1%, rgba(187, 187, 187, 0) 70.9%);
     align-items: center;
 }
 .challenge-text{
@@ -32,6 +33,7 @@
     height: 2rem;
     width: 20vw;
     border-radius: 5px;
+    margin-top: -5rem !important;
     margin: 1rem;
     padding: 0;
 }
