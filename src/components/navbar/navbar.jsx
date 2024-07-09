@@ -1,10 +1,12 @@
 import { useState } from "react";
 import classNames from "classnames";
 import { Link } from "rasengan";
+import logo from "@assets/logo.png";
+import { useLocation } from "rasengan";
 
 function Navbar() {
   const [showMobileNav, setShowMobilenav] = useState(false);
-
+  const location = useLocation();
   const toogleMobileNav = () => {
     setShowMobilenav(!showMobileNav);
   };
@@ -21,11 +23,14 @@ function Navbar() {
   };
 
   return (
-    <nav className="relative flex items-center justify-around font-Poppins px-2 md:py-[25px] bg-[#F2F7FF] overflow-hidden ">
-      <div className="relative font-sora text-[32px] pr-[40px] pt-[9px] doctor-gradient text-transparent font-[600] leading-normal text-primary">
-        <span className="text-primary md:text-[32px] text-[25px] ">
-          TechDiscov
-        </span>
+    <nav className="relative flex items-center justify-around font-Poppins px-2 md:py-2 bg-[#F2F7FF] overflow-hidden ">
+      <div className="relative  text-[32px] pr-[20px]  text-transparent font-[600] leading-normal text-primary">
+        <Link to="/" className="flex items-center">
+          <img src={logo} alt="" className="size-[5rem] object-cover " />
+          <span className="text-primary md:text-[25px] text-[20px] ">
+            TechDiscov
+          </span>
+        </Link>
         <div className="absolute  right-0 top-0">
           {/* <img
             src={group3}
@@ -37,13 +42,16 @@ function Navbar() {
       <ul className="hidden lg:visible md:flex items-center gap-[40px] ">
         <Link
           to="/trainings"
-          className="text-[16px] text-[#6C87AE] first-of-type:text-[#3A8EF6] hover:text-[#3A8EF6] cursor-pointer"
+          className="text-[16px] text-[#6C87AE]  hover:text-[#3A8EF6] cursor-pointer"
         >
           Trainings
         </Link>
         <Link
           to="/employers"
-          className="text-[16px] text-[#6C87AE] first-of-type:text-[#3A8EF6] hover:text-[#3A8EF6] cursor-pointer"
+          className={
+            (location.pathname === "/employers" && "!text-primary",
+            "text-[16px] text-[#6C87AE] hover:text-[#3A8EF6] cursor-pointer")
+          }
         >
           For employers
         </Link>

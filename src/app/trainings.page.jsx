@@ -1,6 +1,7 @@
 import { Link } from "rasengan";
-import logo from "@assets/logo.svg";
+
 import Image from "@rasenganjs/image";
+import training_image from "../assets/trainings.jpg";
 import CoursesConvenience from "@/components/trainings/CoursesConvenience";
 const conveniences = [
   {
@@ -30,7 +31,7 @@ const conveniences = [
 const Trainings = () => {
   return (
     <section className="w-full h-full  flex flex-col items-center py-8  ">
-      <div className="flex px-[20px] md:px-[50px] xl:px-[100px]">
+      <div className="flex px-[20px] gap-16 md:px-[50px] xl:px-[100px]">
         <div className="flex-1">
           <h1 className="text-[50px] font-bold text-gray-700 ">
             {" "}
@@ -44,7 +45,13 @@ const Trainings = () => {
           </button>
         </div>
 
-        <div className="flex-1">{}</div>
+        <div className="flex-1">
+          <Image
+            src={training_image}
+            alt="profile picture"
+            className="object-cover z-10 !size-[200px] !w-[400px] !h-[350px] grayscale-0 rounded-md "
+          />
+        </div>
       </div>
       <div className=" w-full flex justify-center bg-primary my-[100px] py-5  gap-[50px] flex-wrap">
         {conveniences.map((item, index) => (

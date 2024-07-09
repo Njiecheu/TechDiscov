@@ -1,8 +1,5 @@
 /* Load Urbanist and Comfortaa font */
-<<<<<<< HEAD
-=======
 /* @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500&family=Urbanist:wght@700&display=swap"); */
->>>>>>> origin/raph
 
 /* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
 
@@ -15,10 +12,10 @@
 @tailwind components;
 @tailwind utilities;
 
-:root{
-  --color-49BEFF: #49BEFF;
-  --color-E8F7FF: #E8F7FF;
-  --color-34A1DE: #34A1DE;
+:root {
+  --color-49BEFF: #49beff;
+  --color-E8F7FF: #e8f7ff;
+  --color-34A1DE: #34a1de;
 }
 body,
 html {
@@ -32,34 +29,34 @@ html {
 }
 
 /*scrollbar*/
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 5px;
   height: 0px;
 }
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
   background-color: var(--color-34A1DE);
   border-radius: 6px;
 }
-::-moz-scrollbar{
+::-moz-scrollbar {
   width: 12px;
 }
-::-moz-scrollbar-thumb{
+::-moz-scrollbar-thumb {
   background-color: var(--color-34A1DE);
   border-radius: 6px;
 }
-  /* body {
+/* body {
     font-family: "Inter";
   } */
-  body{
-    /* scrollbar-width: thin; */
-    /* scrollbar-color: var(--color-34A1DE) transparent; */
-    overflow-y: scroll;
-  }
-  /* body::-webkit-scrollbar{
+body {
+  /* scrollbar-width: thin; */
+  /* scrollbar-color: var(--color-34A1DE) transparent; */
+  overflow-y: scroll;
+}
+/* body::-webkit-scrollbar{
     width: 5px;
   } */
-  body::-webkit-scrollbar-thumb{
-    /* background-color: var(--color-34A1DE); */
-    border-radius: 6px;
-  }
-  /* scrollbar ends */
+body::-webkit-scrollbar-thumb {
+  /* background-color: var(--color-34A1DE); */
+  border-radius: 6px;
+}
+/* scrollbar ends */

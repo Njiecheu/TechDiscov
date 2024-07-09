@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./challenge.css";
 
-import Aos from 'aos'
-import 'aos/dist/aos.css'
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 import pair from "../../assets/pair.svg";
 
@@ -49,11 +49,10 @@ const challenges = [
   },
 ];
 
-
 const ChallengeCard = () => {
-  useEffect(()=>{
-    Aos.init({duration: 2000})
-  },[])
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
 
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -65,21 +64,34 @@ const ChallengeCard = () => {
           data-aos="fade-up"
           data-aos-duration="2000"
         >
-          Elevate your tech talent by participating on challenges
+          Elevate your tech skills by participating on challenges
         </div>
         <div className="challenge-image">
           <img src={pair} alt="welcome image" />
         </div>
-        <button onClick={() => setIsModalOpen(true)} className="challenge-btn">Create challenges</button>
-        <ModalForm isOpen={isModalOpen} onRequestClose={() => setIsModalOpen(false)} />
+        <button onClick={() => setIsModalOpen(true)} className="challenge-btn">
+          Create a challenge
+        </button>
+        <ModalForm
+          isOpen={isModalOpen}
+          onRequestClose={() => setIsModalOpen(false)}
+        />
       </div>
 
       <div className="list-div">
-          <div className="list-title" data-aos='fade-up' data-aos-duration='2000'>List of challenges</div>
+        <div className="list-title" data-aos="fade-up" data-aos-duration="2000">
+          List of challenges
         </div>
+      </div>
       <div className="cardContainer">
         {challenges.map(({ id, status, title, description }) => (
-          <div key={id} className="task" data-aos="fade-left" data-aos-duration="2000" draggable="true">
+          <div
+            key={id}
+            className="task"
+            data-aos="fade-left"
+            data-aos-duration="2000"
+            draggable="true"
+          >
             <div className="tags">
               <span className={`tag ${status === "close" ? "close" : "open"}`}>
                 {status}
@@ -191,7 +203,7 @@ const ChallengeCard = () => {
                   >
                     <g strokeWidth="0" id="SVGRepo_bgCarrier"></g>
                     <g
-                      strokeLinejoin="round"
+                      strokeLinejotalentin="round"
                       strokeLinecap="round"
                       id="SVGRepo_tracerCarrier"
                     ></g>

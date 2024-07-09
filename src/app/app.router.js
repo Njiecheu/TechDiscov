@@ -9,7 +9,7 @@ import Certifications from "./certifications";
 import CertifPayment from "./certifPayment.page";
 import CertificationTest from "./certification-test.page";
 import Challenge from "./challenge.page";
-
+import Messages from "./messages.page";
 class AppRouter extends RouterComponent {}
 
 export default defineRouter({
@@ -24,6 +24,7 @@ export default defineRouter({
     Certifications,
     CertifPayment,
     CertificationTest,
+    Challenge,
+    Messages,
   ],
-  pages: [Home, Challenge],
 })(AppRouter);

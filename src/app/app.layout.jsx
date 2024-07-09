@@ -24,9 +24,8 @@ const AppLayout = () => {
     <React.Fragment>
       {connectedUserId && <Navbar />}
 
-      <Navbar />
       <Outlet />
-      <Footer />
+      {/* <Footer /> */}
     </React.Fragment>
   );
 };

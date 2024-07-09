@@ -19,7 +19,7 @@ function CertificationCard({ image, title, category, issuer, date }) {
       </div>
       <div className="flex justify-center gap-2 mt-1 text-[15px] font-bold">
         <Link
-          to="/"
+          to="/certif-payment"
           className="flex justify-center py-3 w-full text-white   bg-primary hover:bg-gray-50 hover:text-primary hover:border-2  border border-[#cbd5e1] hover:border-primary rounded-md"
         >
           Start Now
