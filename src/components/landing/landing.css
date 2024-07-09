@@ -8,11 +8,13 @@
   justify-content: center;
   align-items: center;   
 } */
+ 
 .hello-div{
   margin-top: 5rem;
   display: grid;
   padding: 2rem;
-  width: 100vw;
+  width: 210%;
+  margin-left: -8rem !important;
   background: linear-gradient(359.3deg, rgb(196, 214, 252) 1%, rgba(187, 187, 187, 0) 70.9%);
   grid-template-columns: 1fr 1fr;
   justify-content: space-between;
@@ -25,6 +27,7 @@
 .hello-image{
   /* background-color: red; */
   margin-top: -3rem;
+  margin-left: -25rem;
 }
 .img-hello{
   border-radius: 5px;
@@ -134,9 +137,11 @@
 }
 .postDetails h3{
   font-size: 3rem;
+  color: var(--color-34A1DE) !important;
 }
 .postDetails p{
   font-size: 1rem !important;
+  color: #808283 !important;
 }
 .imgDiv{
   height: 200px;

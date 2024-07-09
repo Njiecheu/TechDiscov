@@ -38,7 +38,7 @@ const data = [
 
 const students = [
   {
-    name: "ASSAF",
+    name: "Assaf",
     testimonial: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.",
     image: img1
   },
