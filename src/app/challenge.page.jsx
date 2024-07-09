@@ -1,7 +1,6 @@
 import { Link } from "rasengan";
 import logo from "@assets/logo.svg";
 import Image from "@rasenganjs/image";
-import Landing from "@/components/landing/Landing";
 import ChallengeCard from "@/components/challengeCard/ChallengeCard";
 
 const Challenge = () => {

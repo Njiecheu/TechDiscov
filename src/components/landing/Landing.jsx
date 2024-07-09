@@ -4,10 +4,8 @@ import "./landing.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
-import welcome from "../../assets/welcome.svg";
+import welcome from "../../assets/OIP9.jpeg";
 import Carousel from "../carousel/Carousel";
-import Footer from "../footer/Footer";
-import hero from "@/assets/hero-image.jpeg";
 import img1 from "../../assets/i1.webp";
 import img2 from "../../assets/i2.jpeg";
 import img3 from "../../assets/i3.webp";
@@ -38,23 +36,21 @@ const data = [
 
 const students = [
   {
-    name: "John Doe",
+    name: "Assaf",
     testimonial:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.",
     image: img1,
   },
   {
-    name: "Jane Smith",
-    testimonial:
-      "Sed posuere consectetur est at lobortis. Aenean lacinia bibendum nulla sed consectetur.",
-    image: img6,
+    name: "Sorelle ",
+    testimonial: "Sed posuere consectetur est at lobortis. Aenean lacinia bibendum nulla sed consectetur.",
+    image: img3
   },
   {
-    name: "Michael Johnson",
-    testimonial:
-      "Curabitur blandit tempus porttitor. Integer posuere erat a ante venenatis dapibus.",
-    image: img3,
-  },
+    name: "SOUKOUDJOU",
+    testimonial: "Curabitur blandit tempus porttitor. Integer posuere erat a ante venenatis dapibus.",
+    image: img6
+  }
 ];
 const Landing = () => {
   useEffect(() => {
@@ -72,8 +68,9 @@ const Landing = () => {
             Discover and Elevate Tech Talents
           </div>
           <div className="hello-image">
-            <img src={hero} alt="welcome image" />
+            <img src={welcome} alt="welcome image" className="img-hello" />
           </div>
+          <button className="landing-btn">Browse talents</button>
         </div>
         <div className="card">
           <div

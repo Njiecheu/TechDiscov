@@ -4,7 +4,8 @@ import Aos from 'aos'
 import 'aos/dist/aos.css'
 
 import "./carousel.css";
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import { MdArrowBackIosNew, MdArrowForwardIos } from "react-icons/md";
+
 
 const Carousel = ({ students }) => {
     useEffect(()=>{
@@ -37,17 +38,17 @@ const Carousel = ({ students }) => {
               <p>{student.testimonial}</p>
             </div>
             <div className="carousel-image" data-aos='fade-right' data-aos-duration='3000'>
-              <img src={student.image} alt={student.name} />
+              <img src={student.image} alt={student.name} className="img-carousel" />
             </div>
           </div>
         ))}
       </div>
       <div className="carousel-buttons">
         <button onClick={prevSlide}>
-          <FaArrowLeft />
+          <MdArrowBackIosNew />
         </button>
         <button onClick={nextSlide}>
-          <FaArrowRight />
+          <MdArrowForwardIos />
         </button>
       </div>
     </div>
