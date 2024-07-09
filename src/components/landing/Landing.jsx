@@ -4,7 +4,7 @@ import "./landing.css";
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 
-import welcome from "../../assets/welcome.svg";
+import welcome from "../../assets/OIP9.jpeg";
 import Carousel from "../carousel/Carousel";
 import Footer from "../footer/Footer";
 
@@ -38,19 +38,19 @@ const data = [
 
 const students = [
   {
-    name: "John Doe",
+    name: "ASSAF",
     testimonial: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.",
     image: img1
   },
   {
-    name: "Jane Smith",
+    name: "Sorelle ",
     testimonial: "Sed posuere consectetur est at lobortis. Aenean lacinia bibendum nulla sed consectetur.",
-    image: img6
+    image: img3
   },
   {
-    name: "Michael Johnson",
+    name: "SOUKOUDJOU",
     testimonial: "Curabitur blandit tempus porttitor. Integer posuere erat a ante venenatis dapibus.",
-    image: img3
+    image: img6
   }
 ];
 const Landing = () => {
@@ -63,7 +63,7 @@ const Landing = () => {
         <div className="hello-div">
           <div className="hello-text" data-aos='fade-up' data-aos-duration='2000'>Discover and Elevate Tech Talents</div>
           <div className="hello-image">
-            <img src={welcome} alt="welcome image" />
+            <img src={welcome} alt="welcome image" className="img-hello"/>
           </div>
         </div>
         <div className="card">

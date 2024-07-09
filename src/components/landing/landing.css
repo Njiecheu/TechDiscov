@@ -24,6 +24,12 @@
   /* background-color: red; */
   margin-top: -3rem;
 }
+.img-hello{
+  border-radius: 5px;
+  height: 60vh;
+  width: 40vw;
+  margin-top: -25px;
+}
 .card{
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -145,10 +151,7 @@ a{
 
 /*responsive*/
 @media screen and (max-width: 450px) {
-  .imgDiv{
-      /* margin-left: 6px; */
-      align-items: center;
-  }
+  
 }
 @media screen and (min-width: 451px) and (max-width: 884px) {
   .mainContainer{
@@ -156,6 +159,10 @@ a{
   }
 }
 @media screen and (max-width: 450px) {
+  .imgDiv{
+    /* margin-left: 6px; */
+    align-items: center;
+  }
   .hello-image{
     display: none;
   }
@@ -163,6 +170,29 @@ a{
     width: 100vw;
     font-size: 25px;
     text-align: center;
+  }
+  .singlePost{
+    grid-template-columns: 1fr;
+  }
+  .singlePost.even {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .imgDiv{
+    grid-column: 1;
+  }
+  .postDetails{
+    grid-column: 1;
+  }
+  .imgDiv, .postDetails{
+    width: 90vw;
+    margin-left: 1.2rem;
+  }
+  .postDetails p{
+    font-size: 16px;
+  }
+  .postDetails h3{
+    font-size: 17px;
   }
   .card{
     display: grid;
