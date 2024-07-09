@@ -11,7 +11,7 @@ const Employers = () => {
   useEffect(() => {
     axios
       .get("http://kamergaz.life:8088/api/accounts/users/")
-      .then(res => {
+      .then((res) => {
         setProfiles(res.results);
         console.log(res.results);
       })
@@ -23,11 +23,16 @@ const Employers = () => {
     <section className="w-full h-full  flex flex-col items-center py-4 px-[20px] md:px-[50px] xl:px-[50px] ">
       <Hero />
       <section className="px-[5%] py-12 flex justify-center gap-12 flex-wrap ">
-        {profiles
+        {/* {profiles
           ? profiles.map((item, index) => {
               <TechProfile key={index} />;
             })
-          : ""}
+          : ""} */}
+        <TechProfile />
+        <TechProfile />
+        <TechProfile />
+        <TechProfile />
+        <TechProfile />
       </section>
       <div className="relative w-full my-5  h-[1px] bg-primary">
         <div className=" absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 px-5 bg-white">
