@@ -1,119 +1,124 @@
-:root{
-  --color-49BEFF: #49BEFF;
-  --color-E8F7FF: #E8F7FF;
-  --color-34A1DE: #34A1DE;
+:root {
+  --color-49BEFF: #49beff;
+  --color-E8F7FF: #e8f7ff;
+  --color-34A1DE: #34a1de;
 }
 
 .carousel-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100vw;
-    height: 400px;
-    overflow: hidden;
-    position: relative;
-    background: linear-gradient(359.3deg, rgb(196, 214, 252) 1%, rgba(187, 187, 187, 0) 70.9%);
-  }
-  
-  .carousel-slide {
-    display: flex;
-    width: 100%;
-    transition: transform 0.5s ease-in-out;
-  }
-  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+  background: linear-gradient(
+    359.3deg,
+    rgb(196, 214, 252) 1%,
+    rgba(187, 187, 187, 0) 70.9%
+  );
+}
+
+.carousel-slide {
+  display: flex;
+  width: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  display: grid;
+  justify-content: space-between;
+  min-width: 100%;
+  box-sizing: border-box;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.carousel-text {
+  width: 100%;
+  padding: 20px;
+  padding-left: 3rem;
+  margin-top: 13rem;
+  box-sizing: border-box;
+}
+
+.carousel-text h3 {
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.carousel-text p {
+  font-size: 1.5rem;
+}
+
+.carousel-image {
+  width: 100%;
+  height: 75vh !important;
+  padding-right: 3rem;
+  box-sizing: border-box;
+}
+
+.carousel-image img {
+  border-radius: 10px;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.carousel-buttons {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.carousel-buttons button {
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/*responsive*/
+@media screen and (max-width: 450px) {
   .carousel-item {
     display: grid;
-    justify-content: space-between;
-    min-width: 100%;
     box-sizing: border-box;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
   }
-  
+
   .carousel-text {
+    order: 2;
     width: 100%;
-    padding: 20px;
-    padding-left: 3rem;
-    margin-top: 7rem;
+    height: 25%;
+    margin-top: -16rem; /* Adjust margin as needed */
+    /* background-color: green; */
     box-sizing: border-box;
+    margin-left: 2rem;
+    padding: 1rem; /* Optional padding for better appearance */
   }
-  
   .carousel-text h3 {
-    font-weight: bold;
-    font-size: 3rem;
+    font-size: 20px;
   }
-  
   .carousel-text p {
-    font-size: 1.5rem;
+    font-size: 20px;
+    width: 19rem;
   }
-  
   .carousel-image {
-    width: 100%;
-    height: 75vh;
-    padding-right: 3rem;
+    order: 1;
+    width: 100vw;
+    padding-left: 0;
+    margin-left: 3.2rem;
     box-sizing: border-box;
   }
-  
+
   .carousel-image img {
+    width: 18rem;
+    margin-top: 7rem;
+    height: 12rem;
     border-radius: 10px;
-    width: 100%;
+    object-fit: cover;
   }
-  
-  .carousel-buttons {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    transform: translateY(-50%);
-  }
-  
-  .carousel-buttons button {
-    background: rgba(0, 0, 0, 0.5);
-    border: none;
-    color: white;
-    padding: 10px;
-    cursor: pointer;
-  }
-  
-  /*responsive*/
-  @media screen and (max-width: 450px) {
-    .carousel-item {
-      display: grid;
-      box-sizing: border-box;
-      grid-template-columns: 1fr;
-    }
-    
-    .carousel-text {
-      order: 2;
-      width: 100%;
-      height: 25%;
-      margin-top: -16rem; /* Adjust margin as needed */
-      /* background-color: green; */
-      box-sizing: border-box;
-      margin-left: 2rem;
-      padding: 1rem; /* Optional padding for better appearance */
-    }
-    .carousel-text h3{
-      font-size: 20px;
-    }
-    .carousel-text p{
-      font-size: 20px;
-      width: 19rem;
-    }
-    .carousel-image {
-      order: 1;
-      width: 100vw;
-      padding-left: 0;
-      margin-left: 3.2rem;
-      box-sizing: border-box;
-    }
-    
-    .carousel-image img {
-      width: 18rem;
-      margin-top: 7rem;
-      height: 12rem; 
-      border-radius: 10px;
-      object-fit: cover;
-    }
-  }
-  
+}
